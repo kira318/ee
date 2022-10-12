@@ -1,0 +1,243 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #ff2e63;
+  --background: #eaeaea;
+  --text: #252a34;
+  --text-secondary: #717171;
+  --secondary: #08d9d6;
+  --border: #dddddd;
+  --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  color: var(--text);
+}
+
+.tprimary {
+  color: var(--primary);
+}
+
+.tsecondary {
+  color: var(--text-secondary);
+}
+
+.flexc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hsecondary {
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+/* btns */
+.btnPrimary {
+  background-color: var(--primary);
+  color: white;
+  border-radius: 8px;
+  padding: 10px 20px;
+  border: 1px solid var(--primary);
+}
+
+.btnPrimary:hover {
+  background-color: #ff2e62db;
+  color: white;
+  border: 1px solid var(--primary);
+}
+
+.btnSecondary {
+  border-radius: 8px;
+  border: 1px solid var(--text);
+  padding: 10px 20px;
+}
+
+.btnSecondary:hover {
+  color: black;
+  background: rgba(227, 227, 227, 0.449)
+}
+
+/* PRODUCTS */
+
+.products .card {
+  border-radius: 0;
+}
+.products .card-img-top {
+  border-radius: 0;
+}
+
+.products a {
+  text-decoration: none;
+}
+
+.products .card {
+  border: 0;
+}
+
+.products .card:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.products .rating {
+  background-color: #42855B;
+  color: white;
+  padding: 7px;
+  border-radius: 10px;
+}
+
+/* cat filter */
+
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+ body {
+  overflow-x: hidden;
+}
+
+/* Toggle Styles */
+
+#wrapper {
+  padding-left: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+  padding-left: 250px;
+}
+
+#sidebar-wrapper {
+  z-index: 1000;
+  position: fixed;
+  left: 250px;
+  width: 0;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  background: whitesmoke;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  width: 250px;
+}
+
+#page-content-wrapper {
+  width: 100%;
+  position: absolute;
+  padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+  position: absolute;
+  margin-right: -250px;
+}
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-nav li {
+  text-indent: 20px;
+  line-height: 40px;
+  padding: 20px 30px;
+}
+
+.sidebar-nav li a {
+  display: block;
+  text-decoration: none;
+  color: #999999;
+}
+
+.sidebar-nav li a:hover {
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+  height: 65px;
+  font-size: 18px;
+  line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+  color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
+.sidebar-nav label {
+  padding-top: 20px;
+}
+
+@media(min-width:768px) {
+  #wrapper {
+      padding-left: 250px;
+  }
+
+  #wrapper.toggled {
+      padding-left: 0;
+  }
+
+  #sidebar-wrapper {
+      width: 250px;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+      width: 0;
+  }
+
+  #page-content-wrapper {
+      padding: 20px;
+      position: relative;
+  }
+
+  #wrapper.toggled #page-content-wrapper {
+      position: relative;
+      margin-right: 0;
+  }
+}
+
+/* filter */
+
+.filter {
+  text-decoration: none;
+}
+
+.cat-title {
+  width: 100%;
+  display: flex;
+  padding: 20px 50px 0;
+  justify-content: space-between;
+}
